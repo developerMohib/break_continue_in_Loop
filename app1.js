@@ -6,7 +6,7 @@
 
 let number = 0 ;
 let given_number = 10;
-// document.write('I have 200. but it stop when hit 100 = ')
+document.write('I have 200. but it stop when hit 10 = ')
 while(number <= 200 ){
     if(number === given_number){
         break;
@@ -19,9 +19,39 @@ while(number <= 200 ){
 /* 
     Write a while loop that adds numbers starting from 1, but stops (using break) as soon as the sum reaches or exceeds 100
 */
+document.write('<br>');
+let number1 = 1;
+let sum = 0;
+let total = 100;
+while(number1 < 100){
+    document.write(number1 + ' ');
+    number1++
+    sum = sum + number1;
+    if( sum >= total){
+        document.write('i am done.');
+        break;
+    }
+}
+let result = sum;
+document.write('summation = '+ result);
+
 /* 
     Write a loop that goes from 1 to 100, but stops (using break) when it encounters the first square number (like 4, 9, 16, etc.)
 */
+
+document.write('<br>');
+
+let number2 = 1;
+let square_num = 4 ;
+while(number2 <= 20){
+    document.write(number2 + ' ')
+    number2++;
+    if(square_num === number2){
+        document.write('i find a square Number =' + square_num);
+        break;
+    }
+
+}
 /* ------------- Continue -------------------*/
 
 /* 
