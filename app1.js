@@ -19,7 +19,7 @@ while(number <= 200 ){
 /* 
     Write a while loop that adds numbers starting from 1, but stops (using break) as soon as the sum reaches or exceeds 100
 */
-document.write('<br>');
+document.write('<br>Stop When you find summation exceeds 100 <br>');
 let number1 = 1;
 let sum = 0;
 let total = 100;
@@ -39,7 +39,7 @@ document.write('summation = '+ result);
     Write a loop that goes from 1 to 100, but stops (using break) when it encounters the first square number (like 4, 9, 16, etc.)
 */
 
-document.write('<br>');
+document.write('<br> Find Out the Number which one is the nearest square. <br> ');
 
 let number2 = 1;
 let square_num = 4 ;
@@ -57,7 +57,31 @@ while(number2 <= 20){
 /* 
     Write a loop to print even numbers from 1 to 40. Use continue to skip odd numbers.
 */
+document.write('<br> This is Even Number Loop---<br>');
 
+for ( let evNm = 1 ; evNm <= 40; evNm++){
+    if(evNm % 2 == 0){
+        continue
+    }
+    document.write( evNm + ' ');
+}
+document.write('<br> This is Odd Number Loop----<br>');
+
+let evenNm = 1;
+while(evenNm <= 40){
+    evenNm++;
+    if(evenNm % 2 !== 0 ){
+        continue
+    }
+    document.write(evenNm + ' ');
+}
 /*
     display odd number from 55 to 85 and skip the numbers divisible by 5.
 */
+document.write('<br> Display odd number from 55 to 85 and skip the numbers divisible by 5----<br>');
+let aNumber = 55;
+while (aNumber < 85){
+    aNumber++;
+    if(aNumber % 2 !== 0 && aNumber % 5 == 0)
+    document.write(aNumber + ' ') ;
+}
