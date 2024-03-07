@@ -1,0 +1,4 @@
+	
+	=> Loop 
+	1. Use Break Keyword
+	2. find out targeted Number using break
